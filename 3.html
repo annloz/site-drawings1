@@ -17,16 +17,16 @@
         <form action="#" method="get">
             <p><b>Значение по оси OX</b></p>
             <p>
-                <input type="radio" name="ox" value="style" checked> Стиль<br>
-                <input type="radio" name="ox" value="country"> Страна<br>
-                <input type="radio" name="ox" value="year"> Год<br>
-                <input type="radio" name="ox" value="paint"> Вид краски
+                <input type="radio" id="ox_1" name="ox" value="style" checked> Стиль<br>
+                <input type="radio" id="ox_2" name="ox" value="country"> Страна<br>
+                <input type="radio" id="ox_3" name="ox" value="year"> Год<br>
+                <input type="radio" id="ox_4" name="ox" value="paint"> Вид краски
             </p>
             <p><b>Значение по оси OY</b></p>
             <p>
-                <input type="checkbox" name="oy" value="max_year"> Максимальный год<br>
-                <input type="checkbox" name="oy" value="min_year"> Минимальный год<br>
-                <input type="checkbox" name="oy" value="count"> Количество картин
+                <input type="checkbox" id="oy_1" name="oy" value="max_year"> Максимальный год<br>
+                <input type="checkbox" id="oy_2" name="oy" value="min_year"> Минимальный год<br>
+                <input type="checkbox" id="oy_3" name="oy" value="count"> Количество картин
             </p>
             <p><input type="submit" value="Построить"></p>
         </form>
@@ -35,12 +35,12 @@
     <details open>
         <summary><b>Фильтр</b></summary>
         <form action="#" method="get">
-            <p>Название: <input type="text" name="name_filter" size="30"></p>
-            <p>Художник: <input type="text" name="artist_filter" size="30"></p>
-            <p>Страна: <input type="text" name="country_filter" size="30"></p>
-            <p>Стиль: <input type="text" name="style_filter" size="30"></p>
-            <p>Краски: <input type="text" name="paint_filter" size="30"></p>
-            <p>Год: от <input type="number" name="year_from"> до <input type="number" name="year_to"></p>
+            <p>Название: <input type="text" id="name_filter" name="name_filter" size="30"></p>
+            <p>Художник: <input type="text" id="artist_filter" name="artist_filter" size="30"></p>
+            <p>Страна: <input type="text" id="country_filter" name="country_filter" size="30"></p>
+            <p>Стиль: <input type="text" id="style_filter" name="style_filter" size="30"></p>
+            <p>Краски: <input type="text" id="paint_filter" name="paint_filter" size="30"></p>
+            <p>Год: от <input type="number" id="year_from" name="year_from"> до <input type="number" id="year_to" name="year_to"></p>
             <p><input type="submit" value="Найти"></p>
         </form>
     </details>
@@ -58,8 +58,8 @@
                     <option value="paint">Краски</option>
                     <option value="year">Год</option>
                 </select>
-                по <input type="radio" name="order1" value="asc" checked> возрастанию
-                <input type="radio" name="order1" value="desc"> убыванию
+                по <input type="radio" id="orderfrom_1" name="order1" value="asc" checked> возрастанию
+                <input type="radio" id="orderto_1" name="order1" value="desc"> убыванию
             </p>
             <p>
                 Второй уровень:
@@ -72,8 +72,8 @@
                     <option value="paint">Краски</option>
                     <option value="year">Год</option>
                 </select>
-                по <input type="radio" name="order2" value="asc" checked> возрастанию
-                <input type="radio" name="order2" value="desc"> убыванию
+                по <input type="radio" id="orderfrom_2" name="order2" value="asc" checked> возрастанию
+                <input type="radio" id="orderto_2" name="order2" value="desc"> убыванию
             </p>
             <p>
                 Третий уровень:
@@ -86,8 +86,8 @@
                     <option value="paint">Краски</option>
                     <option value="year">Год</option>
                 </select>
-                по <input type="radio" name="order3" value="asc" checked> возрастанию
-                <input type="radio" name="order3" value="desc"> убыванию
+                по <input type="radio" id="orderfrom_3" name="order3" value="asc" checked> возрастанию
+                <input type="radio" id="orderto_3" name="order3" value="desc"> убыванию
             </p>
             <p><input type="submit" value="Сортировать"></p>
         </form>
