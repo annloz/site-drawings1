@@ -14,42 +14,42 @@
     <hr>
     <details open>
         <summary><b>График</b></summary>
-        <form action="#" method="get">
+        <form>
             <p><b>Значение по оси OX</b></p>
             <p>
-                <input type="radio" id="ox_1" name="ox" value="style" checked> Стиль<br>
-                <input type="radio" id="ox_2" name="ox" value="country"> Страна<br>
-                <input type="radio" id="ox_3" name="ox" value="year"> Год<br>
-                <input type="radio" id="ox_4" name="ox" value="paint"> Вид краски
+                <input type="radio" id="ox_1" name="ox_1" value="style" checked><label for="ox_1">Стиль</label><br>
+                <input type="radio" id="ox_2" name="ox_2" value="country"><label for="ox_2">Страна</label><br>
+                <input type="radio" id="ox_3" name="ox_3" value="year"><label for="ox_3">Год</label><br>
+                <input type="radio" id="ox_4" name="ox_4" value="paint"><label for="ox_4">Вид краски</label>
             </p>
             <p><b>Значение по оси OY</b></p>
             <p>
-                <input type="checkbox" id="oy_1" name="oy" value="max_year"> Максимальный год<br>
-                <input type="checkbox" id="oy_2" name="oy" value="min_year"> Минимальный год<br>
-                <input type="checkbox" id="oy_3" name="oy" value="count"> Количество картин
+                <input type="checkbox" id="oy_1" name="oy_1" value="max_year"><label for="oy_1">Максимальный год</label><br>
+                <input type="checkbox" id="oy_2" name="oy_2" value="min_year"><label for="oy_2">Минимальный год</label><br>
+                <input type="checkbox" id="oy_3" name="oy_3" value="year"><label for="oy_3">Средний год</label>
             </p>
-            <p><input type="submit" value="Построить"></p>
+            <p><input type="button" value="Построить"></p>
         </form>
         <p>Здесь будет график</p>
     </details>
     <details open>
         <summary><b>Фильтр</b></summary>
-        <form action="#" method="get">
+        <form>
             <p>Название: <input type="text" id="name_filter" name="name_filter" size="30"></p>
             <p>Художник: <input type="text" id="artist_filter" name="artist_filter" size="30"></p>
             <p>Страна: <input type="text" id="country_filter" name="country_filter" size="30"></p>
             <p>Стиль: <input type="text" id="style_filter" name="style_filter" size="30"></p>
             <p>Краски: <input type="text" id="paint_filter" name="paint_filter" size="30"></p>
-            <p>Год: от <input type="number" id="year_from" name="year_from"> до <input type="number" id="year_to" name="year_to"></p>
-            <p><input type="submit" value="Найти"></p>
+            <p>Год: от <input type="number" id="year_from" name="year_from" min="1400" max="2000"> до <input type="number" id="year_to" name="year_to" min="1400" max="2000"></p>
+            <p><input type="button" value="Найти"></p>
         </form>
     </details>
     <details open>
         <summary><b>Сортировка</b></summary>
-        <form action="#" method="get">
+        <form>
             <p>
                 Первый уровень:
-                <select name="sort1">
+                <select id="sort1" name="sort1">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
                     <option value="artist">Художник</option>
@@ -63,7 +63,7 @@
             </p>
             <p>
                 Второй уровень:
-                <select name="sort2">
+                <select id="sort2" name="sort2">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
                     <option value="artist">Художник</option>
@@ -77,7 +77,7 @@
             </p>
             <p>
                 Третий уровень:
-                <select name="sort3">
+                <select id="sort3" name="sort3">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
                     <option value="artist">Художник</option>
@@ -89,7 +89,7 @@
                 по <input type="radio" id="orderfrom_3" name="order3" value="asc" checked> возрастанию
                 <input type="radio" id="orderto_3" name="order3" value="desc"> убыванию
             </p>
-            <p><input type="submit" value="Сортировать"></p>
+            <p><input type="button" value="Сортировать"></p>
         </form>
     </details>
     <hr>
