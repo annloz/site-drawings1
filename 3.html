@@ -35,12 +35,12 @@
     <details open>
         <summary><b>Фильтр</b></summary>
         <form>
-            <p>Название: <input type="text" id="name_filter" name="name_filter" size="30"></p>
-            <p>Художник: <input type="text" id="artist_filter" name="artist_filter" size="30"></p>
-            <p>Страна: <input type="text" id="country_filter" name="country_filter" size="30"></p>
-            <p>Стиль: <input type="text" id="style_filter" name="style_filter" size="30"></p>
-            <p>Краски: <input type="text" id="paint_filter" name="paint_filter" size="30"></p>
-            <p>Год: от <input type="number" id="year_from" name="year_from" min="1400" max="2000"> до <input type="number" id="year_to" name="year_to" min="1400" max="2000"></p>
+            <p><label for="name_filter">Название:</label> <input type="text" id="name_filter" name="name_filter" size="30"></p>
+            <p><label for="artist_filter">Художник:</label> <input type="text" id="artist_filter" name="artist_filter" size="30"></p>
+            <p><label for="country_filter">Страна:</label> <input type="text" id="country_filter" name="country_filter" size="30"></p>
+            <p><label for="style_filter">Стиль:</label> <input type="text" id="style_filter" name="style_filter" size="30"></p>
+            <p><label for="paint_filter">Краски:</label> <input type="text" id="paint_filter" name="paint_filter" size="30"></p>
+            <p><label for="year_from">Год: от</label> <input type="number" id="year_from" name="year_from" min="1400" max="2000"> <label for="year_to">до</label> <input type="number" id="year_to" name="year_to" min="1400" max="2000"></p>
             <p><input type="button" value="Найти"></p>
         </form>
     </details>
@@ -48,7 +48,7 @@
         <summary><b>Сортировка</b></summary>
         <form>
             <p>
-                Первый уровень:
+                <label for="sort1">Первый уровень:</label>
                 <select id="sort1" name="sort1">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
@@ -58,11 +58,11 @@
                     <option value="paint">Краски</option>
                     <option value="year">Год</option>
                 </select>
-                по <input type="radio" id="orderfrom_1" name="order1" value="asc" checked> возрастанию
-                <input type="radio" id="orderto_1" name="order1" value="desc"> убыванию
+                по <input type="radio" id="orderfrom_1" name="order1" value="asc" checked> <label for="orderfrom_1">возрастанию</label>
+                <input type="radio" id="orderto_1" name="order1" value="desc"> <label for="orderto_1">убыванию</label>
             </p>
             <p>
-                Второй уровень:
+                <label for="sort2">Второй уровень:</label>
                 <select id="sort2" name="sort2">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
@@ -72,11 +72,11 @@
                     <option value="paint">Краски</option>
                     <option value="year">Год</option>
                 </select>
-                по <input type="radio" id="orderfrom_2" name="order2" value="asc" checked> возрастанию
-                <input type="radio" id="orderto_2" name="order2" value="desc"> убыванию
+                по <input type="radio" id="orderfrom_2" name="order2" value="asc" checked> <label for="orderfrom_2">возрастанию</label>
+                <input type="radio" id="orderto_2" name="order2" value="desc"> <label for="orderto_2">убыванию</label>
             </p>
             <p>
-                Третий уровень:
+                <label for="sort3">Третий уровень:</label>
                 <select id="sort3" name="sort3">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
@@ -86,8 +86,8 @@
                     <option value="paint">Краски</option>
                     <option value="year">Год</option>
                 </select>
-                по <input type="radio" id="orderfrom_3" name="order3" value="asc" checked> возрастанию
-                <input type="radio" id="orderto_3" name="order3" value="desc"> убыванию
+                по <input type="radio" id="orderfrom_3" name="order3" value="asc" checked> <label for="orderfrom_3">возрастанию</label>
+                <input type="radio" id="orderto_3" name="order3" value="desc"> <label for="orderto_3">убыванию</label>
             </p>
             <p><input type="button" value="Сортировать"></p>
         </form>
